@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- =====================================================
+         CONFIGURAÇÕES BÁSICAS
+         ===================================================== -->
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- =====================================================
+         SEO
+         ===================================================== -->
+
+    <title>FatChanceBellyDance®Style - FCBD Style (ATS®) | NÍJME</title>
+
+    <meta
+      name="description"
+      content="FatChanceBellyDance®Style - FCBD Style (ATS®) no Estúdio NÍJME, em São Paulo. Aprenda e pratique essa modalidade fascinante, aulas em grupo e individuais."
+    />
+
+    <link rel="canonical" href="https://www.nijme.com.br/fcbd_style.html" />
+
+    <meta name="theme-color" content="#2c3e50" />
+
+    <!-- =====================================================
+         FAVICON
+         ===================================================== -->
+
+    <link rel="icon" href="/imagens/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/imagens/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/imagens/favicon-16x16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/imagens/apple-touch-icon.png"
+    />
+
+    <!-- =====================================================
+         OPEN GRAPH
+         ===================================================== -->
+
+    <meta property="og:locale" content="pt_BR" />
+
+    <meta property="og:type" content="website" />
+
+    <meta
+      property="og:title"
+      content="FatChanceBellyDance®Style - FCBD Style (ATS®) em São Paulo | NÍJME"
+    />
+
+    <meta
+      property="og:description"
+      content="FatChanceBellyDance®Style - FCBD Style (ATS®) no Estúdio NÍJME, em São Paulo. Aprenda e pratique essa modalidade fascinante, aulas em grupo e individuais."
+    />
+
+    <meta
+      property="og:url"
+      content="https://www.nijme.com.br/danca_do_ventre.html"
+    />
+
+    <meta property="og:site_name" content="NÍJME" />
+
+    <meta
+      property="og:image"
+      content="https://www.nijme.com.br/imagens/nijme_ats_1.webp"
+    />
+
+    <meta
+      property="og:image:alt"
+      content="A Bailarina NÍJME durante apresentação de FatChanceBellyDance®Style - FCBD Style (ATS®), tocando o instrumento árabe snuj, vestindo choli floral, turbante com rosas vermelhas nas laterais, colar de moedas em fundo preto."
+    />
+
+    <!-- =====================================================
+         TWITTER / X
+         ===================================================== -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta
+      name="twitter:title"
+      content="FatChanceBellyDance®Style - FCBD Style (ATS®) em São Paulo | NÍJME"
+    />
+
+    <meta
+      name="twitter:description"
+      content="FatChanceBellyDance®Style - FCBD Style (ATS®) no Estúdio NÍJME, em São Paulo. Aprenda e pratique essa modalidade fascinante, aulas em grupo e individuais."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://www.nijme.com.br/imagens/nijme_ats_1.webp"
+    />
+
+    <meta
+      name="twitter:image:alt"
+      content="A Bailarina NÍJME em traje azul com joias de cristal durante apresentação de Dança do Ventre, em composição artística sobre fundo estrelado."
+    />
+
+    <!-- =====================================================
+         GOOGLE FONTS
+         ===================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Eagle+Lake|Libre+Baskerville:400i|Roboto:400,700&display=swap"
+    />
+
+    <!-- =====================================================
+         CSS
+         ===================================================== -->
+
+    <link rel="stylesheet" href="css/estilo.css" />
+
+    <link rel="stylesheet" href="css/paginas.css" />
+
+    <link rel="stylesheet" href="css/footer.css" />
+    <!-- =====================================================
+         BxSlider
+         ===================================================== -->
+    <link
+      rel="stylesheet"
+      href="js/bxslider-4-master/dist/jquery.bxslider.css"
+    />
+    <!-- =====================================================
+         Fancybox
+         ===================================================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <!-- =====================================================
+         IMAGEM PRINCIPAL / LCP
+         imagem principal visível na primeira tela.
+         ===================================================== -->
+
+    <link
+      rel="preload"
+      as="image"
+      href="/imagens/nijme_ats_1.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
+
+    <style>
+       /* Reset essencial para o padding funcionar sem quebrar o tamanho da tela */
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+      .pages {
+        /* Aplica o espaçamento apenas nas laterais (esquerda e direita) */
+        padding-inline: 1.25rem;
+      }
+       /* --- ESTILOS DE TIPOGRAFIA (NOVOS) --- */
+       h1 {
+       font-size: clamp(2rem, 5vw, 3rem); /* Flutua entre 32px e 48px */
+       line-height: 1.2;
+      }
+      h2 {
+       font-size: clamp(1.5rem, 3.5vw, 1.75rem); /* Flutua entre 24px e 28px */
+       line-height: 1.3;
+      }
+      h3 {
+       font-size: clamp(1.25rem, 2.5vw, 1.375rem); /* Flutua entre 20px e 22px */
+       line-height: 1.4;
+      }
+      p {
+       font-size: 1.125rem; /* Mantém fixo em 18px por ser o tamanho ideal de leitura global */
+       line-height: 1.6;
+      }
+       /* Título Principal */
+      .pages-titulo, 
+      .h1{
+        font-family: "Eagle Lake", cursive; /* Fonte artística */
+        text-align: center;
+        color: #2c3e50; /* Um tom escuro elegante (pode ajustar) */
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+        
+      }
+      .site-footer h2,
+      .footer-column footer-social h2,
+      .footer-column footer-about h2 {
+        font-family: "Libre Baskerville", serif;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        position: relative;
+        font-weight: 700;
+      } 
+      /* Títulos das Seções (Galeria, Agenda, etc) */
+      .texto h2,
+      .texto h3 {
+        font-family: "Libre Baskerville", serif;
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        position: relative;
+        font-weight: 700;
+      }
+      /* Linha decorativa abaixo dos H2 */
+      .texto h2::after {
+        content: "";
+        display: block;
+        width: 250px; /* Largura da linha */
+        height: 3px;
+        background-color: #d4af37; /* Cor dourada (Gold) */
+        margin: 15px auto 0; /* Centraliza a linha */
+        border-radius: 2px;
+      }
+      /* Ajuste de parágrafos na section de texto */
+      .texto p {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 20px;
+        color: #000000;
+      }     
+      /* Botão WhatsApp */
+      .float-btn {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 25px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 30px;
+        z-index: 1000;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+      }
+
+      .float-whatsapp {
+        right: 25px;
+        background-color: #25d366;
+        color: #fff;
+      }
+
+      .float-whatsapp:hover {
+        transform: scale(1.1);
+        background-color: #20ba5a;
+      }
+
+      /* Ícone SVG WhatsApp */
+      .whatsapp-icon {
+        width: 35px;
+        height: 35px;
+        fill: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="imagens/logo_nijme.png" alt="Níjme Logo" />
+        </a>
+
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="sobre.html">Sobre</a>
+          <div class="dropdown">
+            <a href="#">Danças</a>           
+            <div class="submenu">
+       <a href="danca_do_ventre.html">Dança do Ventre</a>
+       <a href="danca_cigana.html">Dança Cigana Artística</a>
+       <a href="fcbd_style.html">FCBD&reg;Style - ATS&reg;</a>
+       <a href="fusion_bellydance.html">Fusion BellyDance</a>
+            </div>
+          </div>
+          <div class="dropdown">
+           <a href="shows_nijme.html">Shows</a>
+            <div class="submenu">
+              <a href="shows_gruponijme.html">Grupo Níjme&reg;</a>
+              <a href="shows_shambalahtribal.html">Shambalah Tribal</a>
+              <a href="shows_shambalahdancecompany.html">Shambalah Dance Company</a>
+            </div>
+          </div>
+          <a href="artes_oraculares_nijme.html">Artes Oraculares</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+        <div class="header-right">
+          <div class="social-links">
+            <a
+              aria-label="Falar com a Níjme pelo WhatsApp"
+              class="social-icon whatsapp"
+              href="https://api.whatsapp.com/send?l=pt&amp;phone=5511947256632"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+            </a>
+            <a
+              aria-label="Facebook da Níjme Estúdio de Danças"
+              class="social-icon facebook"
+              href="https://www.facebook.com/nijmeestudiodedanca"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+            </a>
+            <a
+              aria-label="Instagram da Níjme Estúdio de Danças"
+              class="social-icon instagram"
+              href="https://www.instagram.com/nijmeestudiodedanca/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+            </a>
+            <a
+              aria-label="Canal da Bailarina Níjme no YouTube"
+              class="social-icon youtube"
+              href="https://www.youtube.com/@bailarinanijme"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+            </a>
+            <a
+              aria-label="Enviar e-mail para a Níjme"
+              class="social-icon email"
+              href="mailto:bailarinanijme@gmail.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+            </a>
+          </div>
+        </div>
+
+        <button
+          aria-controls="mobile-nav"
+          aria-expanded="false"
+          aria-label="Abrir menu de navega&ccedil;&atilde;o"
+          class="mobile-menu-toggle"
+          id="mobile-menu-toggle"
+          type="button"
+        >
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav">
+     <a href="index.html">Home</a>
+     <a href="sobre.html">Sobre a Níjme&reg;</a>
+     <a href="danca_do_ventre.html">Dança do Ventre</a>
+     <a href="fcbd_style.html">FatChanceBellyDance&reg;Style - ATS&reg;</a>
+     <a href="fusion_bellydance.html">Fusion BellyDance</a>
+     <a href="danca_cigana.html">Dança Cigana Artística</a>
+     <a href="shows_nijme.html">Shows com a Bailarina Níjme&reg;</a>
+     <a href="shows_gruponijme.html">Shows do Grupo Níjme&reg;</a>
+     <a href="shows_shambalahtribal.html">Shows da Dupla Shambalah Tribal</a>
+     <a href="shows_shambalahdancecompany.html">Shows da Shambalah Dance Company</a>
+     <a href="artes_oraculares_nijme.html">Artes Oraculares - Consultas & Cursos</a>
+     <a href="contato.html">Contato</a>
+    </div>
+
+    <div class="slider">
+      <div>
+        <img
+          src="imagens/nijme_ats_1.webp"
+          alt="Bailarina NÍJME apresentando FCBD Style (ATS), com traje de estampas florais, rosas vermelhas no turbante, adornos metálicos e snujs nas mãos durante a apresentação."
+        />
+      </div>
+      <div>
+        <img
+          src="imagens/nijme_ats_2.webp"
+          alt="Bailarina NÍJME em traje de FCBD Style (ATS), com head piece de moedas metálicas e flores, joias tradicionais e saia marrom com detalhes florais coloridos, em retrato aproximado e pose de dança com snujs nas mãos."
+        />
+      </div>
+      <div>
+        <img
+          src="imagens/nijme_ats_3.webp"
+          alt="Bailarina NÍJME em traje de FCBD Style (ATS), com turbante e rosas vermelhas, joias tradicionais e saia estampada colorida, em pose ajoelhada com snujs nas mãos."
+        />
+      </div>
+      <div>
+        <img
+          src="imagens/nijme_ats_4.webp"
+          alt="Bailarina NÍJME em traje de FCBD Style (ATS), com turbante e rosas vermelhas, joias tradicionais e saia vermelha em duas poses: em pé com braços altos e close com snujs nas mãos."
+        />
+      </div>
+      <div>
+        <img
+          src="imagens/nijme_ats_5.webp"
+          alt="Bailarina NÍJME em traje de FCBD Style (ATS), com turbante, rosas vermelhas e espada equilibrada, em movimento de giro com saia azul com ponta lilás voando, com snujs nas mãos."
+        />
+      </div>
+    </div>
+
+    <div class="bolinhas"></div>
+
+    <!--ATS-->
+    <section class="pages">
+      <div class="container sobre-mim">
+        <h1 class="pages-titulo">FCBD&reg;Style <br> ATS&reg;</h1>
+        <div class="texto">
+          <p>
+            O FatChanceBellyDance®Style (FCBD®Style) anteriormente conhecido
+            como American Tribal Style® Belly Dance (ATS®) Estilo Tribal
+            Americano de Dança do Ventre criado por Carolena Nericcio.<br />
+          </p>
+          <p>
+            É um estilo moderno de Dança do Ventre baseado na improvisação em
+            grupo com movimentos inspirados nas danças folclóricas do Oriente
+            Médio, Flamenco e da Índia. Sua estética é influenciada pela riqueza de têxteis e jóias
+            do Norte da África e Índia.<br />
+          </p>
+          <p>
+            Seu vocabulário de passos de dança é dividido em repertórios
+            clássico, moderno e dialetos com movimentos lentos e rápidos,
+            baseados no método de coreografia improvisada.<br />
+            É uma dança encantadora que traz a força do grupo como uma entidade
+            única.<br />
+          </p>
+          <p>
+            <h2>FCBD&reg;Style - ATS&reg;</h2>
+            <h3>Aprenda & Pratique</h3>
+          </p>
+          <p>
+            Aulas regulares em grupo presenciais<br />
+            📍 Local:Estúdio Níjme®<br />
+            Duração: 1 hora cada aula<br />
+          </p>
+          <p>
+            🗓️ Terças-feiras<br />
+            ⏰ Das 19h15 às 20h15<br />
+            <br />
+            🗓️ Quintas-feiras<br />
+            ⏰ Das 19h15 às 20h15<br />
+            <br />
+          </p>
+          <p>
+            Ou Aula regulares individuais (particulares) com acompanhamento
+            personalizado e individualizado, dia e horário reservado para você!
+          </p>
+          <p>
+            Todas as aulas são ministradas pela Professora, Bailarina e
+            Coreógrafa NÍJME® com tradição desde 1991.<br />
+          </p>
+          <p>
+            Consulte a disponibilidade da agenda do Estúdio de Dança NÍJME® e
+            garanta sua vaga.
+          </p>
+          <p>Informações e inscrições</p>
+        </div>
+        <a
+          href="https://wa.me/5511947256632?text=Ol%C3%A1%2C%20N%C3%ADjme%20%0AQuero%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20FatChance%20BellyDance%20Style%20-%20ATS.%20(enviado%20atrav%C3%A9s%20do%20site)"
+          class="botao"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Saber mais sobre as aulas FCBD®Style -ATS® pelo WhatsApp do Estúdio NÍJME"
+          >QUERO SABER MAIS <br />SOBRE AS AULAS</a
+        >
+      </div>
+      <!--fecha container-->
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-column footer-about">
+            <img
+              alt="Logo N&iacute;jme"
+              class="footer-logo"
+              decoding="async"
+              loading="lazy"
+              src="imagens/logo_nijme.png"
+            />
+            <h2>Sobre a Níjme</h2>
+            <p>
+              Especialista em Dança do Ventre, Dança Cigana Artística,
+              FCBD&reg;Style - ATS&reg; e Fusion BellyDance, com tradição desde
+              1991.
+            </p>
+            <p>
+              Também oferece consultas personalizadas das Artes oraculares,
+              sistemas de leituras de Tarot, Baralho Cigano e Oráculos
+              temáticos.
+            </p>
+          </div>
+
+          <div class="footer-column footer-social">
+            <h2>Siga-nos</h2>
+            <a
+              aria-label="Falar com a Níjme pelo WhatsApp"
+              class="social-icon whatsapp"
+              href="https://api.whatsapp.com/send?l=pt&amp;phone=5511947256632"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+            </a>
+            <a
+              aria-label="Facebook da Níjme Estúdio de Danças"
+              class="social-icon facebook"
+              href="https://www.facebook.com/nijmeestudiodedanca"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+            </a>
+            <a
+              aria-label="Instagram da Níjme Estúdio de Danças"
+              class="social-icon instagram"
+              href="https://www.instagram.com/nijmeestudiodedanca/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+            </a>
+            <a
+              aria-label="Canal da Bailarina Níjme no YouTube"
+              class="social-icon youtube"
+              href="https://www.youtube.com/@bailarinanijme"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+            </a>
+            <a
+              aria-label="Enviar e-mail para a Níjme"
+              class="social-icon email"
+              href="mailto:bailarinanijme@gmail.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            Copyright© 2004/2026 Níjme® <br> Todos os direitos reservados <br>
+            <a href="termos-e-privacidade.html">Termos e Privacidade</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <a
+      class="float-btn float-whatsapp"
+      href="https://api.whatsapp.com/send/?phone=5511947256632&amp;text=Ol%C3%A1%2C+N%C3%ADjme+%0AQuero+falar+com+voc%C3%AA.+%28enviado+atrav%C3%A9s+do+site%29&amp;type=phone_number&amp;app_absent=0"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Fale Conosco no WhatsApp"
+    >
+      <svg
+        class="whatsapp-icon"
+        viewbox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l121.7-31.9c32.6 17.9 69.5 27.5 107 27.5h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+        ></path>
+      </svg>
+    </div>
+
+    <script src="js/bxslider-4-master/dist/jquery-3.1.1.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="js/bxslider-4-master/dist/jquery.bxslider.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").bxSlider({
+          auto: true,
+          //   pager: false,
+          pager: true,
+          pause: 10000,
+          speed: 1000,
+          controls: true,
+        });
+      });
+    </script>
+  </body>
+</html>

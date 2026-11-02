@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shows da Shambalah Dance Company</title>
+    <meta
+      name="description"
+      content="Agenda de Shows da Companhia de Danças - Shambalah Dance Company, com fotos das apresentações de Dança do Ventre, Dança Cigana Artística, FCBD Style - ATS e Fusion BellyDance em festas e eventos. "
+    />
+    <link rel="shortcut icon" href="/imagens/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="imagens/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="imagens/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="imagens/favicon-16x16.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Eagle+Lake|Libre+Baskerville:400i,700|Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/paginas.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="js/bxslider-4-master/dist/jquery.bxslider.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+
+    <style>
+        /* Reset essencial para o padding funcionar sem quebrar o tamanho da tela */
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+      /* Aplica o espaçamento apenas nas laterais (esquerda e direita) */
+      .sdc-info,
+      .show-info {
+         padding-inline: 1.25rem; 
+      }
+      /* --- ESTILOS DE TIPOGRAFIA (NOVOS) --- */
+      h1 {
+       font-size: clamp(2rem, 5vw, 3rem); /* Flutua entre 32px e 48px */
+       line-height: 1.2;
+      }
+      h2 {
+       font-size: clamp(1.5rem, 3.5vw, 1.75rem); /* Flutua entre 24px e 28px */
+       line-height: 1.3;
+      }
+      h3 {
+       font-size: clamp(1.25rem, 2.5vw, 1.375rem); /* Flutua entre 20px e 22px */
+       line-height: 1.4;
+      }
+      p {
+       font-size: 1.125rem; /* Mantém fixo em 18px por ser o tamanho ideal de leitura global */
+       line-height: 1.6;
+      }
+      /* Título Principal */
+      .main-title {
+        font-family: "Eagle Lake", cursive; /* Fonte artística */
+        text-align: center;
+        color: #2c3e50; /* Um tom escuro elegante (pode ajustar) */
+        margin-top: 40px;
+        margin-bottom: 50px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+        
+      }
+
+      /* Títulos das Seções (Galeria, Agenda, etc) */
+      .section-title,
+      .show-info h2,
+      .show-info h3 {
+        font-family: "Libre Baskerville", serif;
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 40px;
+        margin-top: 60px;
+        position: relative;
+        font-weight: 700;
+      }
+
+      /* Linha decorativa abaixo dos H2 */
+      .section-title::after,
+      .show-info h2::after,
+      .show-info h3::after {
+        content: "";
+        display: block;
+        width: 150px; /* Largura da linha */
+        height: 3px;
+        background-color: #d4af37; /* Cor dourada (Gold) */
+        margin: 15px auto 0; /* Centraliza a linha */
+        border-radius: 2px;
+      }
+      .site-footer h2,
+      .footer-column footer-social h2,
+      .footer-column footer-about h2 {
+        font-family: "Libre Baskerville", serif;
+        text-align: left;
+        color: #fff;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        position: relative;
+        font-weight: 700;
+      } 
+      /* Ajuste de parágrafos na section de texto */
+      .sdc-info p,
+      .show-info p {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 20px;
+        color: #000000;
+      }
+
+      .show-info ul {
+        max-width: 600px;
+        margin: 0 auto;
+        list-style: none; /* Remove bolinhas padrão */
+        padding: 0;
+      }
+
+      .show-info ul li {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #d4af37;
+        font-family: "Roboto", sans-serif;
+      }
+     
+      /* --- ESTILOS DO MOSAICO (MANTIDO) --- */
+      .mosaico-grid {
+        margin: 0 auto;
+        width: 100%;
+      }
+      .mosaico-grid:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .grid-sizer,
+      .grid-item {
+        width: 33.333%;
+        padding: 8px; /* Aumentei um pouco o espaçamento */
+        box-sizing: border-box;
+        float: left;
+      }
+      .grid-item img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 6px; /* Bordas um pouco mais arredondadas */
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #eee; /* Cor de fundo enquanto carrega */
+      }
+      .grid-item a {
+        display: block; /* Garante que o link ocupe o espaço */
+        text-decoration: none;
+      }
+      .grid-item a:hover img {
+        transform: translateY(-5px); /* Efeito de "levantar" */
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 900px) {
+        .grid-sizer,
+        .grid-item {
+          width: 50%;
+        }
+      }
+      @media (max-width: 600px) {
+        .grid-sizer,
+        .grid-item {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img alt="Nijme Logo" decoding="async" src="imagens/logo_nijme.png"/ fetchpriority="high">
+        </a>
+
+        <nav class="main-nav">
+           <a href="index.html">Home</a>
+          <a href="sobre.html">Sobre</a>
+          <div class="dropdown">
+            <a href="#">Danças</a>           
+            <div class="submenu">
+       <a href="danca_do_ventre.html">Dança do Ventre</a>
+       <a href="danca_cigana.html">Dança Cigana Artística</a>
+       <a href="fcbd_style.html">FCBD&reg;Style - ATS&reg;</a>
+       <a href="fusion_bellydance.html">Fusion BellyDance</a>
+            </div>
+          </div>
+          <div class="dropdown">
+           <a href="shows_nijme.html">Shows</a>
+            <div class="submenu">
+              <a href="shows_gruponijme.html">Grupo Níjme&reg;</a>
+              <a href="shows_shambalahtribal.html">Shambalah Tribal</a>
+              <a href="shows_shambalahdancecompany.html">Shambalah Dance Company</a>
+            </div>
+          </div>
+          <a href="artes_oraculares_nijme.html">Artes Oraculares</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+
+        <div class="header-right">
+          <div class="social-links">
+            <a
+              href="https://api.whatsapp.com/send?l=pt&amp;phone=5511947256632"
+              target="_blank"
+              class="social-icon whatsapp"
+            ></a>
+            <a
+              href="https://www.facebook.com/nijmeestudiodedanca"
+              target="_blank"
+              class="social-icon facebook"
+            ></a>
+            <a
+              href="https://www.instagram.com/nijmeestudiodedanca/"
+              target="_blank"
+              class="social-icon instagram"
+            ></a>
+            <a
+              href="https://www.youtube.com/@bailarinanijme"
+              target="_blank"
+              class="social-icon youtube"
+            ></a>
+            <a
+              href="mailto:bailarinanijme@gmail.com"
+              target="_blank"
+              class="social-icon email"
+            ></a>
+          </div>
+        </div>
+
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav">
+     <a href="index.html">Home</a>
+     <a href="sobre.html">Sobre a Níjme&reg;</a>
+     <a href="danca_do_ventre.html">Dança do Ventre</a>
+     <a href="fcbd_style.html">FatChanceBellyDance&reg;Style - ATS&reg;</a>
+     <a href="fusion_bellydance.html">Fusion BellyDance</a>
+     <a href="danca_cigana.html">Dança Cigana Artística</a>
+     <a href="shows_nijme.html">Shows com a Bailarina Níjme&reg;</a>
+     <a href="shows_gruponijme.html">Shows do Grupo Níjme&reg;</a>
+     <a href="shows_shambalahtribal.html">Shows da Dupla Shambalah Tribal</a>
+     <a href="shows_shambalahdancecompany.html">Shows da Shambalah Dance Company</a>
+     <a href="artes_oraculares_nijme.html">Artes Oraculares - Consultas & Cursos</a>
+     <a href="contato.html">Contato</a>
+    </div>
+
+    <div class="content">
+      <main>
+        <h1 class="main-title">Shambalah Dance Company</h1>
+        <section class="sdc-info">
+          <p>
+            Companhia de Dança amadora fundada pela <a
+              aria-label="Conheça a incrível multi artista Níjme"  
+              href="sobre.html"
+              target="_blank"
+              style="
+                color: #000000;
+                text-decoration: none;
+                font-weight: bold;
+                padding-bottom: 2px;
+              ">NÍJME®</a> que através de shows e apresentações artísticas amadoras divulga, promove, propaga e mostra em
+            eventos públicos os estilos de danças clássicas, folclóricas e modernas da Dança do Ventre, Dança Cigana Artística, FatChanceBellyDance®Style (FCBD®Style - ATS®) e Fusion BellyDance.
+            <br />
+            <br />A multiartista Níjme® é sua diretora artística, coreógrafa e figurinista
+            exclusiva. <br />Seu elenco é formado pelas alunas inscritas em seus cursos regulares das modalidades de dança.
+            <br />
+          </p>
+        </section>
+        <section class="mosaico-container">
+          <h2 class="section-title">Galeria de Fotos</h2>
+
+          <div class="mosaico-grid">
+            <div class="grid-sizer"></div>
+
+            <div class="grid-item">
+              <a
+                data-fancybox="gallery"
+                href="imagens/sdc/01-ShambalahDanceCompany.jpg"
+                data-caption="Mercado Místico/SP - 05 março 2023"
+                ><img
+                  src="imagens/sdc/01-ShambalahDanceCompany.jpg"
+                  alt="Imagem 1"
+              /></a>
+            </div>
+            <div class="grid-item">
+              <a
+                data-fancybox="gallery"
+                href="imagens/sdc/02-ShambalahDanceCompany10-09-23.jpg"
+                data-caption="Mercado Místico/SP - 10 setembro de 2023"
+                ><img
+                  src="imagens/sdc/02-ShambalahDanceCompany10-09-23.jpg"
+                  alt="Imagem 2"
+              /></a>
+            </div>
+            <div class="grid-item">
+              <a
+                data-fancybox="gallery"
+                href="imagens/sdc/03-ShambalahDanceCompany.jpg"
+                data-caption="Mercado das Bruxas/SP - 02 abril 2023"
+                ><img
+                  src="imagens/sdc/03-ShambalahDanceCompany.jpg"
+                  alt="Imagem 3"
+              /></a>
+            </div>
+            <div class="grid-item">
+              <a
+                data-fancybox="gallery"
+                href="imagens/sdc/04-ShambalahDanceCompany03-12-23.jpg"
+                data-caption="Mercado Místico/SP - 03 dezembro de 2023"
+                ><img
+                  src="imagens/sdc/04-ShambalahDanceCompany03-12-23.jpg"
+                  alt="Imagem 4"
+              /></a>
+            </div>
+            <div class="grid-item">
+              <a
+                data-fancybox="gallery"
+                href="imagens/sdc/05-ShambalahDanceCompany29-01-23.jpg"
+                data-caption="Mercado Místico/SP - 29 janeiro de 2023"
+                ><img
+                  src="imagens/sdc/05-ShambalahDanceCompany29-01-23.jpg"
+                  alt="Imagem 5"
+              /></a>
+            </div>
+            <div class="grid-item">
+              <a
+                data-fancybox="gallery"
+                href="imagens/sdc/06-ShambalahDanceCompany.jpg"
+                data-caption="Mercado Místico/SP - 02 março de 2024"
+                ><img
+                  src="imagens/sdc/06-ShambalahDanceCompany.jpg"
+                  alt="Imagem 6"
+              /></a>
+            </div>
+            <div class="grid-item">
+              <a
+                data-fancybox="gallery"
+                href="imagens/sdc/07-ShambalahDanceCompany.jpg"
+                data-caption="Shambalah Dance Company - Imagem 7"
+                ><img
+                  src="imagens/sdc/07-ShambalahDanceCompany.jpg"
+                  alt="Imagem 7"
+              /></a>
+            </div>
+            <div class="grid-item">
+              <a
+                data-fancybox="gallery"
+                href="imagens/sdc/08-ShambalahDanceCompany02-03-24.jpg"
+                data-caption="Mercado Místico/SP - 02 março de 2024"
+                ><img
+                  src="imagens/sdc/08-ShambalahDanceCompany02-03-24.jpg"
+                  alt="Imagem 8"
+              /></a>
+            </div>
+            <div class="grid-item">
+              <a
+                data-fancybox="gallery"
+                href="imagens/sdc/09-ShambalahDanceCompany03-03-24.jpg"
+                data-caption="Mercado Místico/SP 13 anos - 03 março 2024"
+                ><img
+                  src="imagens/sdc/09-ShambalahDanceCompany03-03-24.jpg"
+                  alt="Imagem 9"
+              /></a>
+            </div>
+            <div class="grid-item">
+              <a
+                data-fancybox="gallery"
+                href="imagens/sdc/10-ShambalahDanceCompany28-01-24.jpg"
+                data-caption="Mercado Místico/SP - 28 janeiro de 2024"
+                ><img
+                  src="imagens/sdc/10-ShambalahDanceCompany28-01-24.jpg"
+                  alt="Imagem 10"
+              /></a>
+            </div>
+            <div class="grid-item">
+              <a
+                data-fancybox="gallery"
+                href="imagens/sdc/11-ShambalahDanceCompany08-12-24.jpg"
+                data-caption="Mercado Místico/SP - 08 dezembro de 2024"
+                ><img
+                  src="imagens/sdc/11-ShambalahDanceCompany08-12-24.jpg"
+                  alt="Imagem 11"
+              /></a>
+            </div>
+            <div class="grid-item">
+              <a
+                data-fancybox="gallery"
+                href="imagens/sdc/12-ShambalahDanceCompany07-09-25.jpg"
+                data-caption="Mercado Místico/SP - 07 setembro de 2025"
+                ><img
+                  src="imagens/sdc/12-ShambalahDanceCompany07-09-25.jpg"
+                  alt="Imagem 12"
+              /></a>
+            </div>
+            <div class="grid-item">
+              <a
+                data-fancybox="gallery"
+                href="imagens/sdc/13-ShambalahDanceCompany.jpg"
+                data-caption="Mercado das Bruxas/SP - 26 outubro de 2024"
+                ><img
+                  src="imagens/sdc/13-ShambalahDanceCompany.jpg"
+                  alt="Imagem 13"
+              /></a>
+            </div>
+            <div class="grid-item">
+              <a
+                data-fancybox="gallery"
+                href="imagens/sdc/14-ShambalahDanceCompany.jpg"
+                data-caption="Mercado das Bruxas/SP - 29 outubro 2023"
+                ><img
+                  src="imagens/sdc/14-ShambalahDanceCompany.jpg"
+                  alt="Imagem 14"
+              /></a>
+            </div>
+            <div class="grid-item">
+              <a
+                data-fancybox="gallery"
+                href="imagens/sdc/15-ShambalahDanceCompany.jpg"
+                data-caption="Mercado das Bruxas/SP - abril 2024"
+                ><img
+                  src="imagens/sdc/15-ShambalahDanceCompany.jpg"
+                  alt="Imagem 15"
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="show-info">
+          <h2>Agenda de Shows</h2>
+          <p>
+            Acompanhe as próximas apresentações da <br>
+            <strong>Shambalah Dance Company</strong><br />
+            e venha se encantar com a nossa arte.
+          </p>
+          <h3>Dezembro 2026</h3>
+          <ul>
+            <li>
+              <strong>MERCADO MÍSTICO - SÃO PAULO</strong><br />
+              <br />
+              06 de dezembro de 2026 (domingo) <br />
+              ⏰ Horário: em breve será divulgado<br />
+              <br />
+              📍 Local: Av. Paulista, 735 - Club Homs <br />
+              <br />
+              🎟️ Entrada Gratuita <br />
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-column footer-about">
+            <img
+              src="imagens/logo_nijme.png"
+              alt="Logo Níjme"
+              class="footer-logo"
+            />
+            <h2>Sobre a Níjme</h2>
+            <p>
+              Especialista em Dança do Ventre, Dança Cigana Artística,
+              FCBD&reg;Style - ATS&reg; e Fusion BellyDance, com tradição desde
+              1991.
+            </p>
+            <p>
+              Também oferece consultas personalizadas das Artes oraculares,
+              sistemas de leituras de Tarot, Baralho Cigano e Oráculos
+              temáticos.
+            </p>
+          </div>
+          <div class="footer-column footer-social">
+            <h2>Siga-nos</h2>
+            <a
+              href="https://api.whatsapp.com/send?l=pt&amp;phone=5511947256632"
+              target="_blank"
+              class="social-icon whatsapp"
+              >WhatsApp</a
+            >
+            <a
+              href="https://www.facebook.com/nijmeestudiodedanca"
+              target="_blank"
+              class="social-icon facebook"
+              >Facebook</a
+            >
+            <a
+              href="https://www.instagram.com/nijmeestudiodedanca/"
+              target="_blank"
+              class="social-icon instagram"
+              >Instagram</a
+            >
+            <a
+              href="https://www.youtube.com/@bailarinanijme"
+              target="_blank"
+              class="social-icon youtube"
+              >YouTube</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            Copyright© 2026 Níjme® - Todos os direitos reservados |
+            <a href="termos-e-privacidade.html">Termos e Privacidade</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bxslider-4-master/dist/jquery-3.1.1.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="js/bxslider-4-master/dist/jquery.bxslider.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        var $grid = $(".mosaico-grid").masonry({
+          itemSelector: ".grid-item",
+          percentPosition: true,
+          columnWidth: ".grid-sizer",
+        });
+
+        $grid.imagesLoaded().progress(function () {
+          $grid.masonry("layout");
+        });
+
+        $(".bxslider").bxSlider({
+          auto: true,
+          autoControls: true,
+          stopAutoOnClick: true,
+          pager: true,
+        });
+
+        $('[data-fancybox="gallery"]').fancybox({
+          buttons: ["zoom", "slideShow", "fullScreen", "thumbs", "close"],
+          loop: true,
+          protect: true,
+          animationEffect: "zoom-in-out",
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+/* 
+ * Estilos do Rodapé
+ */
+.site-footer {
+    background-color: #111;
+    color: #aaa;
+    padding: 50px 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    border-top: 4px solid #f0c861;
+    margin-top: 30px;
+}
+
+.site-footer .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-about .footer-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.site-footer h3 {
+    color: #fff;
+    font-family: 'Eagle Lake', cursive;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.site-footer p {
+    margin-bottom: 15px;
+}
+
+.site-footer a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: #f0c861;
+}
+
+.footer-links a,
+.footer-social a {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.9em;
+}
+
+/* Media Query para Responsividade */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-about .footer-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-links a,
+    .footer-social a {
+        padding: 5px 0;
+    }
+}
