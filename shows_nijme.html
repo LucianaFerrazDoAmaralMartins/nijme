@@ -160,8 +160,10 @@
       fetchpriority="high"
     />
     <style>
-        /* Reset essencial para o padding funcionar sem quebrar o tamanho da tela */
-      *, *::before, *::after {
+      /* Reset essencial para o padding funcionar sem quebrar o tamanho da tela */
+      *,
+      *::before,
+      *::after {
         box-sizing: border-box;
       }
       .pages {
@@ -169,25 +171,29 @@
         padding-inline: 1.25rem;
       }
       /* --- ESTILOS DE TIPOGRAFIA (NOVOS) --- */
-h1 {
-  font-size: clamp(2rem, 5vw, 3rem); /* Flutua entre 32px e 48px */
-  line-height: 1.2;
-}
+      h1 {
+        font-size: clamp(2rem, 5vw, 3rem); /* Flutua entre 32px e 48px */
+        line-height: 1.2;
+      }
 
-h2 {
-  font-size: clamp(1.5rem, 3.5vw, 1.75rem); /* Flutua entre 24px e 28px */
-  line-height: 1.3;
-}
+      h2 {
+        font-size: clamp(1.5rem, 3.5vw, 1.75rem); /* Flutua entre 24px e 28px */
+        line-height: 1.3;
+      }
 
-h3 {
-  font-size: clamp(1.25rem, 2.5vw, 1.375rem); /* Flutua entre 20px e 22px */
-  line-height: 1.4;
-}
+      h3 {
+        font-size: clamp(
+          1.25rem,
+          2.5vw,
+          1.375rem
+        ); /* Flutua entre 20px e 22px */
+        line-height: 1.4;
+      }
 
-p {
-  font-size: 1rem; /* Mantém fixo em 16px por ser o tamanho ideal de leitura global */
-  line-height: 1.6;
-}
+      p {
+        font-size: 1rem; /* Mantém fixo em 16px por ser o tamanho ideal de leitura global */
+        line-height: 1.6;
+      }
 
       /* Título Principal */
       .main-title {
@@ -240,23 +246,103 @@ p {
         margin: 0 auto 20px;
         color: #000000;
       }
-     .bailarinanijme-info ul {
+
+      .bailarinanijme-info ul {
+        display: block;
+        width: 100%;
         max-width: 600px;
-        margin: 0 auto 20px;
-        list-style: none; /* Remove bolinhas padrão */
+        margin: 0 auto 20px !important;
         padding: 0;
+        box-sizing: border-box;
+        text-align: justify;
+        list-style: none; /* Remove bolinhas padrão */
         color: #000000;
       }
-
       .bailarinanijme-info ul li {
-        text-align: center;
-        padding: 10px;
-        border-bottom: 1px solid #d4af37;
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        margin: 0;
+        box-sizing: border-box;
+        text-align: justify;
         font-family: "Roboto", sans-serif;
         font-size: 1.1rem;
         line-height: 1.6;
         color: #000000;
+        border-bottom: 1px solid #d4af37;
       }
+      .bailarinanijme-info li h3 {
+        text-align: center;
+        margin: 10px 0;
+      }
+      /* PÁGINA SHOWS - RESPONSIVIDADE
+======================================== */
+
+      /* Permite que os elementos respeitem a largura disponível */
+      .content,
+      .content main,
+      .bailarinanijme-info {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+      }
+
+      /* Textos */
+      .bailarinanijme-info p,
+      .bailarinanijme-info li {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        white-space: normal;
+        line-height: 1.6;
+      }
+
+      /* Títulos */
+      .bailarinanijme-info h2,
+      .bailarinanijme-info h3 {
+        max-width: 100%;
+        overflow-wrap: break-word;
+        line-height: 1.3;
+      }
+      /* ========================================
+   AJUSTES PARA CELULARES
+======================================== */
+
+      @media (max-width: 768px) {
+        .content {
+          width: 100%;
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
+        .bailarinanijme-info p {
+          font-size: 16px;
+          line-height: 1.65;
+          text-align: justify;
+          margin-bottom: 18px;
+        }
+
+        .bailarinanijme-info h2 {
+          font-size: 23px;
+          margin-bottom: 16px;
+        }
+
+        .bailarinanijme-info h3 {
+          font-size: 19px;
+          margin-bottom: 8px;
+        }
+
+        .bailarinanijme-info ul {
+          padding-left: 22px;
+        }
+
+        .bailarinanijme-info li {
+          font-size: 16px;
+          line-height: 1.6;
+          margin-bottom: 18px;
+        }
+      }
+
       /* --- ESTILOS DO MOSAICO (MANTIDO) --- */
       .mosaico-grid {
         margin: 0 auto;
@@ -352,23 +438,25 @@ p {
         </a>
 
         <nav class="main-nav">
-         <a href="index.html">Home</a>
+          <a href="index.html">Home</a>
           <a href="sobre.html">Sobre</a>
           <div class="dropdown">
-            <a href="#">Danças</a>           
+            <a href="#">Danças</a>
             <div class="submenu">
-       <a href="danca_do_ventre.html">Dança do Ventre</a>
-       <a href="danca_cigana.html">Dança Cigana Artística</a>
-       <a href="fcbd_style.html">FCBD&reg;Style - ATS&reg;</a>
-       <a href="fusion_bellydance.html">Fusion BellyDance</a>
+              <a href="danca_do_ventre.html">Dança do Ventre</a>
+              <a href="danca_cigana.html">Dança Cigana Artística</a>
+              <a href="fcbd_style.html">FCBD&reg;Style - ATS&reg;</a>
+              <a href="fusion_bellydance.html">Fusion BellyDance</a>
             </div>
           </div>
           <div class="dropdown">
-           <a href="shows_nijme.html">Shows</a>
+            <a href="shows_nijme.html">Shows</a>
             <div class="submenu">
               <a href="shows_gruponijme.html">Grupo Níjme&reg;</a>
               <a href="shows_shambalahtribal.html">Shambalah Tribal</a>
-              <a href="shows_shambalahdancecompany.html">Shambalah Dance Company</a>
+              <a href="shows_shambalahdancecompany.html"
+                >Shambalah Dance Company</a
+              >
             </div>
           </div>
           <a href="artes_oraculares_nijme.html">Artes Oraculares</a>
@@ -414,18 +502,22 @@ p {
     </header>
 
     <div class="mobile-nav" id="mobile-nav">
-     <a href="index.html">Home</a>
-     <a href="sobre.html">Sobre a Níjme&reg;</a>
-     <a href="danca_do_ventre.html">Dança do Ventre</a>
-     <a href="fcbd_style.html">FatChanceBellyDance&reg;Style - ATS&reg;</a>
-     <a href="fusion_bellydance.html">Fusion BellyDance</a>
-     <a href="danca_cigana.html">Dança Cigana Artística</a>
-     <a href="shows_nijme.html">Shows com a Bailarina Níjme&reg;</a>
-     <a href="shows_gruponijme.html">Shows do Grupo Níjme&reg;</a>
-     <a href="shows_shambalahtribal.html">Shows da Dupla Shambalah Tribal</a>
-     <a href="shows_shambalahdancecompany.html">Shows da Shambalah Dance Company</a>
-     <a href="artes_oraculares_nijme.html">Artes Oraculares - Consultas & Cursos</a>
-     <a href="contato.html">Contato</a>
+      <a href="index.html">Home</a>
+      <a href="sobre.html">Sobre a Níjme&reg;</a>
+      <a href="danca_do_ventre.html">Dança do Ventre</a>
+      <a href="fcbd_style.html">FatChanceBellyDance&reg;Style - ATS&reg;</a>
+      <a href="fusion_bellydance.html">Fusion BellyDance</a>
+      <a href="danca_cigana.html">Dança Cigana Artística</a>
+      <a href="shows_nijme.html">Shows com a Bailarina Níjme&reg;</a>
+      <a href="shows_gruponijme.html">Shows do Grupo Níjme&reg;</a>
+      <a href="shows_shambalahtribal.html">Shows da Dupla Shambalah Tribal</a>
+      <a href="shows_shambalahdancecompany.html"
+        >Shows da Shambalah Dance Company</a
+      >
+      <a href="artes_oraculares_nijme.html"
+        >Artes Oraculares - Consultas & Cursos</a
+      >
+      <a href="contato.html">Contato</a>
     </div>
 
     <div class="content">
@@ -433,12 +525,11 @@ p {
         <h1 class="main-title">Shows</h1>
         <section class="bailarinanijme-info">
           <p>
-            Shows e apresentações de Dança do Ventre, Dança Cigana Artística,
-            FatChanceBellyDance®Style (FCBD®Style - ATS®) e Fusion BellyDance em
-            eventos: festas, aniversários, casamentos, batizados, bodas,
-            comemorações, bem como em feiras, inaugurações de lojas, congressos,
-            eventos corporativos, festivais, prefeituras e projetos especiais ou
-            em qualquer acontecimento social.
+            Apresentações de Danças em eventos: festas, aniversários,
+            casamentos, batizados, bodas, comemorações, bem como em feiras,
+            inaugurações de lojas, congressos, eventos corporativos, festivais,
+            prefeituras e projetos especiais ou em qualquer acontecimento
+            social.
           </p>
           <h2>Tipos de Danças</h2>
           <ul>
@@ -469,14 +560,15 @@ p {
             </li>
           </ul>
           <p>
-            A artista realiza nas apresentações interpretação de músicas
-            alegres,contagiantes e modernas incluindo interação divertida e
-            alegre com os convidados.
+            Durante as apresentações, a artista interpreta músicas alegres,
+            envolventes e contagiantes, em uma experiência especial, marcada
+            pela alegria, proporcionando momentos de descontração e interação
+            com os convidados.
           </p>
           <p>
             Contrate essa atração artística e coloque a magia das danças dentro
-            da sua festa, trazendo sorte <br />e bons fluídos... certamente seu
-            evento será inesquecível.<br />
+            da sua festa, trazendo sorte e bons fluídos... certamente seu evento
+            será inesquecível.<br />
           </p>
           <p>
             O valor para contratação depende da disponibilidade da data na
